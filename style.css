@@ -23,7 +23,7 @@ time, mark, audio, video {
 body
 {
     background:#eee;
-    font-family:Helvetica,Arial;
+    font-family: 'Montserrat', sans-serif;
     font-size:14px;
 }
 
@@ -98,27 +98,37 @@ p {
 .bar
 {
 	transition: all, 0.2s ease;
-	width: 70%;
-	margin: auto;
+	width: 100%;
+	margin-top:10px;
 	height: 1px;
- 	background-color: black;
+ 	background-color: #fff;
  	transform: scale(0);
 }
 
 .top-bar{
-  padding:20px;
-  background-color:#000;
+  padding:0px;
+  background-color:#272932;
 }
 
 .top-bar ul{
-  padding:20px;
+  padding:0px 20px;
   background:none;
+}
+
+.top-bar ul li{
+  padding:50px 25px;
+  transition:all ease 0.1 s;
+}
+
+.top-bar ul li:hover{
+  background-color:#4D7EA8;
 }
               
 .top-bar ul li a
 {
 	text-decoration: none;
 	color: #fff;
+  padding:0;
 }
 
 .top-bar ul li a:hover ~ .bar
@@ -133,6 +143,7 @@ p {
 }
 
 .menu-text{
+  margin-top: 10px;
   color:#fff;
 }
 
