@@ -104,11 +104,21 @@ p {
  	background-color: black;
  	transform: scale(0);
 }
+
+.top-bar{
+  padding:20px;
+  background-color:#000;
+}
+
+.top-bar ul{
+  padding:20px;
+  background:none;
+}
               
 .top-bar ul li a
 {
 	text-decoration: none;
-	color: #000;
+	color: #fff;
 }
 
 .top-bar ul li a:hover ~ .bar
@@ -120,6 +130,10 @@ p {
 {
 	width: 30px;
 	height: 3px;
+}
+
+.menu-text{
+  color:#fff;
 }
 
 /***************************************************
