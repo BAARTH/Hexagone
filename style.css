@@ -25,6 +25,7 @@ body
     background:#eee;
     font-family: 'Montserrat', sans-serif;
     font-size:14px;
+    position: relative;
 }
 
 /***************************************************************/
@@ -61,12 +62,6 @@ p {
     font-size: 17px;
     font-weight: 400;
     color: #2d2d2d;
-}
-
-.divider-section
-{
-  margin-top: 50px;
-  margin-bottom: 50px;
 }
 
 .home-page
@@ -235,6 +230,32 @@ p {
 {
 	width: 30px;
 	height: 3px;
+  background-color: #fff;
+}
+
+.hamburger
+{
+  position: absolute;
+  top: 30px;
+  right: 0;
+  z-index: 3;
+}
+
+.hamburger:focus
+{
+  outline: transparent;
+}
+
+#hamb-bg
+{
+  position: absolute;
+  right: -400px;
+  top: 0;
+  background-color: #272932;
+  height: 100%;
+  transition: right, 0.5s;
+  z-index: 2;
+  opacity: 0;
 }
 
 .menu-text{
@@ -242,6 +263,10 @@ p {
   color:#fff;
 }
 
+.clearboth
+{
+  clear: both;
+}
 /***************************************************
 
 					Responsive
@@ -250,10 +275,6 @@ p {
 
 @media screen and (max-width: 40em) 
 {
-  body
-  {
-    background-color: #333333;
-  }
   .hamburger
    {
    	display: inline-block;
@@ -262,15 +283,16 @@ p {
    {
    	display: none;
    }
+    .divider-section
+   {
+    margin-top: 50px;
+    margin-bottom: 50px;
+   }
 
 }
 
 @media screen and (min-width: 40em) and (max-width: 64em)
 {
-   body
-   {
-    background-color: grey;
-   }
    .hamburger
    {
    	display: inline-block;
@@ -280,6 +302,11 @@ p {
    {
    	display: none;
    }
+    .divider-section
+   {
+    margin-top: 100px;
+    margin-bottom: 100px;
+   }
 }
 
 @media screen and (min-width: 64em)
@@ -288,4 +315,10 @@ p {
    {
    	display: none;
    }
+   .divider-section
+   {
+    margin-top: 200px;
+    margin-bottom: 200px;
+   }
+
 }
