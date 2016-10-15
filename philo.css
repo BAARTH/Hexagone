@@ -1,0 +1,27 @@
+#philo .vert-center-cont
+{
+  background: grey;
+}
+
+#partners
+{
+  background: cyan;
+}
+
+.circle
+{
+  width: 120px;
+  height: 120px;
+  border-radius: 120px;
+  background: orange;
+}
+
+#team-head
+{
+  background: green;
+}
+
+#team-head .vert-center-cont
+{
+   transform: translateX(13%);
+}
