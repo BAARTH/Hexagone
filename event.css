@@ -1,0 +1,59 @@
+.rectangleBg
+{
+	height: 450px;
+	width: 300px;
+	background: red;
+	padding:25px;
+	max-height: 450px;
+	max-width: 300px;
+	overflow: hidden;
+}
+
+.recContent
+{
+	height: 200px;
+	width: 250px;
+	margin: auto;
+	background: orange;
+}
+
+.home-page p {
+   
+	font-size: 13px;
+	padding-right: 0px;
+	line-height: 23px;
+}
+
+.divider-section
+{
+ margin-top: 80px;
+ margin-bottom: 0px;
+}
+
+.home-page .vert-center-cont
+{
+  max-height: 465px;
+  height: 465px;
+  position: relative;
+  overflow: hidden;
+}
+   /***************************************************
+
+					Responsive
+
+***************************************************/
+
+@media only screen and (max-width: 40em) 
+{
+   .home-page .vert-center-cont
+   {
+    max-height: 500px;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+   }
+   .rectangleBg
+   {
+   	margin: auto;
+   }
+}
