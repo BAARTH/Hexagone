@@ -101,6 +101,8 @@ body {
 }
 
 
+
+
 /** Txt Settings **/
 
 /*.bar {
@@ -113,8 +115,19 @@ body {
     transform: scale(0);
 }*/
 
+
+
 .row {
     max-width: 100%;
+}
+
+.vert-center-cont p::-webkit-scrollbar {
+    width: 5px;
+}
+
+.vert-center-cont p::-webkit-scrollbar-thumb {
+    background-color: #4D7EA8;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.5, transparent), to(transparent));
 }
 
 .top-bar {
@@ -198,6 +211,8 @@ body {
     z-index: 2;
     opacity: 0;
 }
+
+
 
 
 /***************************************************
