@@ -113,6 +113,10 @@ body {
     transform: scale(0);
 }*/
 
+.row {
+    max-width: 100%;
+}
+
 .top-bar {
     padding: 0px;
     background-color: #031926;
