@@ -1,27 +1,124 @@
-#philo .vert-center-cont
-{
-  background: grey;
+p {
+    display: block;
+    line-height: 33px;
+    margin-bottom: 0px;
+    font-size: 17px;
+    font-weight: 400;
+    color: #2d2d2d;
 }
 
-#partners
-{
-  background: cyan;
+h1 {
+    text-align: center;
+    padding: 50px 0;
+    font-size: 40px;
+    font-family: 'Abril Fatface', cursive;
+    color: #031926;
 }
 
-.circle
-{
-  width: 120px;
-  height: 120px;
-  border-radius: 120px;
-  background: orange;
+.divider-section {
+    height: 100vh;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-#team-head
-{
-  background: green;
+.divider-section.divider-1 {
+    height: calc(100vh - 114px);
+    background-color: #CDE6F4;
 }
 
-#team-head .vert-center-cont
-{
-   transform: translateX(13%);
+.divider-2 {
+    background-color: #ffffff;
 }
+
+.divider-2 .newsletter {
+    padding-top: 100px;
+}
+
+.divider-2 .vert-center-cont p {
+    height: 70vh;
+}
+
+.divider-3 {
+    background-color: #CDE6F4;
+}
+
+.divider-3 .vert-center-cont {
+    transform: translateX(13%);
+}
+
+.circle-container {
+    margin-top: 170px;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+    background: #031926;
+}
+
+.divider-4 {
+    background-color: #FFFFFF;
+}
+
+.vert-center-cont p {
+    height: 300px;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.vert-center-cont img {
+    float: left;
+    min-height: 300px;
+    padding-right: 20px;
+    width: auto;
+    max-width: calc(100% - .9375rem);
+    overflow: hidden;
+}
+
+.vert-center-cont p::-webkit-scrollbar-track {}
+
+.vert-center-cont p::-webkit-scrollbar {
+    width: 5px;
+}
+
+.vert-center-cont p::-webkit-scrollbar-thumb {
+    background-color: #4D7EA8;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.5, transparent), to(transparent));
+}
+
+@media screen and (max-width: 40em) {
+    .circle-container {
+        margin-top: 20px;
+    }
+    .circle-container .vert-center-cont {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width: 40.003em) and (max-width: 64em) {
+    .vert-center-cont {
+        height: 150px;
+        padding-bottom: 20px;
+    }
+    .vert-center-cont img {
+        min-height: 00px;
+        float: none;
+        width: 95%;
+        position: absolute;
+        clip: rect(0px, auto, 100px, 0px);
+        overflow: hidden;
+    }
+    h1 {
+        padding: 30px 0;
+    }
+    .circle-container {
+        margin-top: 50px;
+    }
+    .circle-container .vert-center-cont {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (min-width: 64.003em) {}
+
