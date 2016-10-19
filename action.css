@@ -27,38 +27,11 @@ h1 {
 }
 
 .divider-2 {
-    background-color: #ffffff;
-}
-
-.divider-2 .newsletter {
-    padding-top: 100px;
-}
-
-.divider-2 .vert-center-cont p {
-    height: 70vh;
+    background-color: #FFFFFF;
 }
 
 .divider-3 {
     background-color: #CDE6F4;
-}
-
-.divider-3 .vert-center-cont {
-    /*    margin:auto;*/
-}
-
-.circle-container {
-    margin-top: 120px;
-    overflow-x: hidden;
-    overflow-y: visible;
-    height: 100%;
-}
-
-.circle {
-    width: 200px;
-    height: 200px;
-    border-radius: 180px;
-    background: #031926;
-    margin: auto;
 }
 
 .divider-4 {
@@ -66,7 +39,7 @@ h1 {
 }
 
 .vert-center-cont p {
-    height: 300px;
+    height: 400px;
     position: relative;
     overflow-y: scroll;
 }
@@ -95,19 +68,6 @@ h1 {
     h1 {
         padding: 30px 0;
     }
-    .circle-container {
-        margin-top: -20px;
-    }
-    .circle-container .vert-center-cont {
-        margin-top: 40px;
-    }
-    .circle {
-        width: 160px;
-        height: 160px;
-        border-radius: 160px;
-        background: #031926;
-        margin: auto;
-    }
 }
 
 @media screen and (min-width: 40.003em) and (max-width: 64em) {
@@ -122,24 +82,6 @@ h1 {
         position: absolute;
         clip: rect(0px, auto, 100px, 0px);
         overflow: hidden;
-    }
-    h1 {
-        padding: 30px 0;
-    }
-    .circle-container {
-        margin-top: 0px;
-    }
-    .circle-container .vert-center-cont {
-        margin-top: 70px;
-    }
-}
-
-@media screen and (min-width: 40.003em) and (max-width: 1220px) {
-    .circle {
-        width: 160px;
-        height: 160px;
-        border-radius: 160px;
-    }
 }
 
 @media screen and (min-width: 64.003em) {}
