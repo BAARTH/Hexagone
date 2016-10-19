@@ -43,18 +43,22 @@ h1 {
 }
 
 .divider-3 .vert-center-cont {
-    transform: translateX(13%);
+    /*    margin:auto;*/
 }
 
 .circle-container {
-    margin-top: 170px;
+    margin-top: 120px;
+    overflow-x: hidden;
+    overflow-y: visible;
+    height: 100%;
 }
 
 .circle {
-    width: 120px;
-    height: 120px;
-    border-radius: 120px;
+    width: 200px;
+    height: 200px;
+    border-radius: 180px;
     background: #031926;
+    margin: auto;
 }
 
 .divider-4 {
@@ -88,11 +92,21 @@ h1 {
 }
 
 @media screen and (max-width: 40em) {
+    h1 {
+        padding: 30px 0;
+    }
     .circle-container {
-        margin-top: 20px;
+        margin-top: -20px;
     }
     .circle-container .vert-center-cont {
         margin-top: 40px;
+    }
+    .circle {
+        width: 160px;
+        height: 160px;
+        border-radius: 160px;
+        background: #031926;
+        margin: auto;
     }
 }
 
@@ -113,10 +127,18 @@ h1 {
         padding: 30px 0;
     }
     .circle-container {
-        margin-top: 50px;
+        margin-top: 0px;
     }
     .circle-container .vert-center-cont {
         margin-top: 70px;
+    }
+}
+
+@media screen and (min-width: 40.003em) and (max-width: 1220px) {
+    .circle {
+        width: 160px;
+        height: 160px;
+        border-radius: 160px;
     }
 }
 
