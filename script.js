@@ -19,3 +19,25 @@ hamb.onclick = function()
 		hambBg.style.opacity = '1';
 	}
 }
+
+var mapy = document.querySelector('.mapy');
+var map = document.querySelector('#map');
+
+map.classList.add('scroll-off');
+
+mapy.onmouseup = function ()
+{
+	map.classList.add('scroll-off');
+}
+
+mapy.onmousedown = function ()
+{
+	map.classList.remove('scroll-off');
+}
+
+mapy.onmouseleave = function ()
+{
+	map.classList.add('scroll-off');
+}
+
+
