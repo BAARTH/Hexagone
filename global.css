@@ -211,6 +211,25 @@ body {
     z-index: 2;
     opacity: 0;
 }
+    
+
+.menu_hamb 
+{   position: absolute;
+    display: block;
+    list-style: none;
+    text-align: center;
+    top: 200px;
+    left: 110px;
+    font-size: 34px;
+    line-height: 60px;
+    font-family: 'Abril Fatface', cursive;
+    
+}
+
+.menu_hamb li a{
+    color: #CDE6F4;
+}
+
 
 
 
