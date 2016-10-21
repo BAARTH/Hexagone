@@ -14,7 +14,7 @@ hamb.onclick = function()
 	{
 		hamb.classList.add('is-active');
 		hambBg.classList.remove('displayNone');
-		hambBg.style.width = '400px';
+		hambBg.style.width = '100%';
 		hambBg.style.right = '0px';
 		hambBg.style.opacity = '1';
 	}
