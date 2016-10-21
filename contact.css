@@ -1,3 +1,7 @@
+body {
+    background: #CDE6F4;
+}
+
 p {
     display: block;
     line-height: 33px;
@@ -45,7 +49,6 @@ h1 {
     overflow: hidden;
 }
 
-
 form.contact input {
     display: inline-block;
     border: none;
@@ -54,7 +57,6 @@ form.contact input {
     width: auto;
     margin-bottom: 20px;
     outline: none;
-
 }
 
 form.contact label {
@@ -70,25 +72,27 @@ form.contact button {
     background-color: #031926;
     padding: 20px 20px;
     margin: auto;
-    width: 400px;
+    width: 100%;
     text-transform: uppercase;
     margin-top: 10px;
+}
+
+.vert-center-cont.formulaire {
+    margin-left: 50px;
 }
 
 
 /**/
 
 .form textarea {
-    width: 400px;
+    width: 100%;
     height: 100px;
     resize: none;
     font-size: 12px;
     margin-top: 10px;
 }
 
-.map iframe {
-
-}
+.map iframe {}
 
 .scroll-off {
     pointer-events: none;
@@ -105,23 +109,33 @@ form.contact button {
 
 ***************************************************/
 
-@media screen and (max-width: 40em) {}
+@media screen and (max-width: 40em) {
+    .vert-center-cont.formulaire {
+        margin-left: auto;
+    }
+    .vert-center-cont.map {
+        margin-top: 50px;
+    }
+    .form textarea {
+        width: 100%
+    }
+    form.contact button {
+        width: 100%;
+    }
+}
 
 @media screen and (min-width: 40.003em) and (max-width: 64em) {
-    .vert-center-cont {
-        height: 150px;
-        padding-bottom: 20px;
+    .vert-center-cont.formulaire {
+        margin-left: auto;
     }
-    .vert-center-cont img {
-        min-height: 00px;
-        float: none;
-        width: 95%;
-        position: absolute;
-        clip: rect(0px, auto, 100px, 0px);
-        overflow: hidden;
+    .vert-center-cont.map {
+        margin-top: 50px;
     }
-    h1 {
-        padding: 30px 0;
+    .form textarea {
+        width: 100%
+    }
+    form.contact button {
+        width: 100%;
     }
 }
 
